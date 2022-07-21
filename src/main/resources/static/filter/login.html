@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            document{
+                padding: 15px;
+            }
+            p {
+                display: table;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+            div {
+                align-content:  center;
+                align-items:  center;
+                align-self:  stretch;
+                vertical-align: middle;
+                border: darkgreen medium solid  ;
+                /* display: flex;*/
+                margin:  auto ;
+                display: table;
+                position: absolute;
+                padding: 15px;
+                width: 300px;
+                top: 10%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            label  {
+                padding: 10px;
+                text-align: right;
+                width: 200px;
+            }
+            input [type=password]{
+                margin-left: 250px;
+                color: blue;
+                width: 250px;
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <form action="/loginServlet" method="post" >
+            <div>Login<br/>
+                <label  for="userid"> User ID</label><input type="text"  name="username" /><br/>
+                <label  for="password"> Password</label><input type="password" name="password"/><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Sign In">
+            </div>
+        </form>
+    </body>
+</html>
